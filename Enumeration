@@ -1,9 +1,7 @@
 subdomain
-> Gobuster -w wor list -t 50 -u <website>
+> Gobuster -w SecLists/Discovery/DNS/bitquark-subdomains-top100000.txt list -t 50 -u <website>
 
 Dirlisting
 > dirsearch
 > dirb
 > dirbuster
-
- 
