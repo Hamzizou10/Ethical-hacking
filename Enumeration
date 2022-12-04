@@ -1,5 +1,6 @@
 subdomain
-> Gobuster -w SecLists/Discovery/DNS/bitquark-subdomains-top100000.txt list -t 50 -u <website>
+> Gobuster vhost -w SecLists/Discovery/DNS/bitquark-subdomains-top100000.txt -t 50 -u <website>
+> wfuzz -c -u 10.10.11.177 -H "Host: FUZZ.siteisup.htb" -w Dictionnaires/SecLists/Discovery/DNS/bitquark-subdomains-top100000.txt
 
 Dirlisting
 > dirsearch
