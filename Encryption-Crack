@@ -1,0 +1,10 @@
+
+
+
+
+.pfx file
+> use pfx2john and crack using john
+> extract certificat (=public key) and private key
+  >
+Connect WinRM using public and private key
+> evil-winrm -i <ip>-S -c <public (.crt)> -k <private (.key)> 
