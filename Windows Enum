@@ -1,0 +1,9 @@
+
+List shares anonymous
+> smbclient -L \\<DomainName> -I 10.10.10.1 -N
+
+Rpc Anonymous bind
+> rpcclient -U '' <IP>
+
+SMB and RPC sheetsheat
+> https://www.willhackforsushi.com/sec504/SMB-Access-from-Linux.pdf
