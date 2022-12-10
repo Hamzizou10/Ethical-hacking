@@ -1,0 +1,2 @@
+Using LAPS to find administrator password
+>Get-ADComputer -Filter * -Properties ms-Mcs-AdmPwd, ms-McsAdmPwdExpirationTime
