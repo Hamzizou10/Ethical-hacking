@@ -7,4 +7,4 @@
 > extract certificat (=public key) and private key
   >
 Connect WinRM using public and private key
-> evil-winrm -i <ip>-S -c <public (.crt)> -k <private (.key)> 
+> evil-winrm -i <ip> -S -c <public (.crt)> -k <private (.key)> 
