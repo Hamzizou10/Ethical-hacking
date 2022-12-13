@@ -1,0 +1,10 @@
+SSH
+> Go to /home/user/
+> if .ssh does not exist -> ssh-keygen
+> cd .ssh
+> cat id_rsa.pub > authorized_keys
+> chmod 600 authrized_keys
+Copie id_rsa dans machine attackant
+Machine attackant
+> chmod 600 id_rsa
+> ssh -i id_rsa <user>@<ip>
