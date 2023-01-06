@@ -1,2 +1,8 @@
 Using LAPS to find administrator password
 >Get-ADComputer -Filter * -Properties ms-Mcs-AdmPwd, ms-McsAdmPwdExpirationTime
+
+See process listening
+> Netstat -ant | findstr LIST
+> connect to the port
+> netstat -o
+> tasklist|findstr <PID>
