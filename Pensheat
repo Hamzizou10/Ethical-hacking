@@ -10,5 +10,9 @@ Dirlisting
 > dirb
 > dirbuster
 
-
+Msf over proxychains
+>msfconsole
+> setg proxies socks4:127.0.0.1:9050
+> set ReverseAllowProxy true
+> #Use Metasploit#
 
