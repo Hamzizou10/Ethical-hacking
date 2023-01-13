@@ -6,3 +6,9 @@ See process listening
 > connect to the port
 > netstat -o
 > tasklist|findstr <PID>
+
+Check right on a service
+(check unquote BINARY_PATH -> > sc.exe qc SERVICE NAME --> Run as System)
+> .\Get-ServiceAcl.ps1 "SERVICE NAME" | Get-ServiceAcl | select -ExpandProperty Access
+> sc.exe stop SERVICE NAME
+> sc.exe start SERVICE NAME
