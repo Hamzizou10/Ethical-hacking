@@ -1,6 +1,7 @@
 
 List shares anonymous
 > smbclient -L \\<DomainName> -I 10.10.10.1 -N
+> smbmap -H <IP>
 
 Rpc Anonymous bind
 > rpcclient -U '' <IP>
